@@ -1,0 +1,91 @@
+#List_Available_Song_Container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#List_Available_Song_Container .List_Item  {
+ font-family: 'Actor', sans-serif;
+    border-radius: 5px;
+    border: 1px #E9B872 solid;
+    margin: 5px 10px;
+    padding: 5px;
+    padding-inline-start: 1em;
+    padding-block-start : .5em;
+    padding-block-end   : .5em;
+
+    cursor: pointer;
+
+}
+#List_Available_Song_Container .List_Item:hover  {
+    background-color: #E9B872;
+    color:#ffffff;
+}
+
+#List_Available_Song_Container .List_Item:a  {
+    background-color: #E9B872;
+    color:#ffffff;
+}
+
+#Main_Container{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    width: 95%;
+    height: 100%;
+    flex-direction: row;
+    background-color:White;
+    justify-content: flex-start;
+    flex-wrap: 95nowrap;
+    align-items:stretch; 
+    border-radius: 15px;
+    border: 1px solid rgb(22, 9, 58);
+    margin: 10px;
+}
+
+#Player_Details_Container{
+    display: inline-block;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: auto;
+    top: 0px;
+    align-self:flex-stretch ;
+    justify-content: space-around;
+    padding: 10px;
+    font-family: 'Courgette', cursive;
+    /*font-family: 'Caveat', cursive;*/
+    background-color: #E9B872;
+    font-size: 1.5em;
+    flex-grow:2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+#Player_Details_Container .button{
+
+border-radius: 10px;
+border: 1px solid #E9B872;
+min-width: 150px;
+padding: 10px;
+background-color: darkblue;
+color: white;
+
+}
+
+#Player_Details_Item{
+
+    display: block;
+    width: 90%;
+    height: auto;
+    clear: both;
+}
+
+#Canvas_Container{
+    width: 600px;
+    height: 600px;
+    display: inline-block;
+    
+    align-self:flex-start;
+    flex-grow:1;
+}
