@@ -8,27 +8,40 @@
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
-    <aside>
-        <h1>Titre de chanson</h1>
-        <p>Auteur</p>
-       <p>Adversaires :</p>
-        <ul>
-            <li>LaLicorne</li>
-            <li>Aazam</li>
-        </ul>
+<body class="d-flex flex-column">
+    <header class="d-flex flex-justify-between">
+        <div id="informations" class="order-2">
+            <div class="d-flex flex-justify-between">
+                <h1 class="txt-white m-0 txt-1_5" style="line-height:1.25rem">Song title (1'30)<br/>
+                    <span class="txt-0_75">by singer</span>
+                </h1>
+                <div class="d-flex flex-column txt-align-right">
+                    <span>BMP: </span>
+                    <span>lvl 4</span>
+                </div>
+            </div>
+            <div id="mediaController" class="txt-align-center">
+                <span>Loading...</span>
+            </div>
+        </div>
         
-    </aside>
-    
-    <main>
-        <figure id="loadingSign" title="loading, please wait..." >
-            <figcaption>Loading...</figcaption>
-            <img id="spinnerLoadingImg1" class="note" src="img/note-simple.png" alt="" />
-            <img id="spinnerLoadingImg2" class="note" src="img/note-double.png" alt="" />
-            <img id="spinnerLoadingImg3" class="note" src="img/note-simple-bis.png" alt="" />
-        </figure>
+        <!--players-->
+        <div class="order-1">
+            <h2 class="mb-0_25">Player 1</h2>
+            <progress></progress>
+        </div>
+        <div class="order-3 txt-align-right">
+            <h2 class="mb-0_25">Player 2</h2>
+            <progress></progress>
+        </div>
+        
+    </header>
+    <main class="flex-grow-1 txt-white">
+        <div id="playZone" class="d-flex flex-justify-center flex-align-center"></div>
     </main>
     
+    <footer class="txt-white txt-align-center p-1">Karaoké (lyrics)</footer>
+  
     
     <!-- import lib p5 + its extension p5-play -->
     <script type="text/javascript" src="js/libs/p5.min.js"></script>
@@ -36,6 +49,6 @@
     <script type="text/javascript" src="js/libs/p5.sound.min.js"></script>
     
     <!-- import our script -->
-    <script type="text/javascript" src="js/script3.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
 </body>
 </html>
